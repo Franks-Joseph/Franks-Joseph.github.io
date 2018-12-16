@@ -1,0 +1,88 @@
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+.action1 {
+    border: solid 1px white;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+  }
+  #button {
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: rgb(30, 187, 235);
+    border-radius: 100%;
+    float: left;
+  }
+  #something {
+    font-family: sans-serif;
+  }
+  #Desc1 {
+  font-family: sans-serif;
+  }
+  .action2 {
+    border: solid 1px white;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+  }
+  #button2 {
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: rgb(30, 187, 235);
+    border-radius: 100%;
+    float: left;
+  }
+  #Desc2 {
+    font-family: sans-serif;
+  }
+  #something2 {
+    font-family: sans-serif;
+  }
+  .action3 {
+    border: solid 1px white;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+  }
+  #button3 {
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: rgb(30, 187, 235);
+    border-radius: 100%;
+    float: left;
+  }
+  #desc3 {
+    font-family: sans-serif;
+  }
+  #something3 {
+    font-family: sans-serif;
+  }
+  .action4 {
+    border: solid 1px white;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+  }
+  #button4 {
+     width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    background-color: rgb(30, 187, 235);
+    border-radius: 100%;
+    float: left;
+  }
+  #desc4 {
+    font-family: sans-serif;
+  }
+  #something4 {
+    font-family: sans-serif;
+  }
+  

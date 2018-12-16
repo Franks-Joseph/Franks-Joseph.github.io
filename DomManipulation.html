@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DOM Manipulation</title>
+    <link href="JSBasics.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+      <h1>DOM Manipulation</h1>
+      <a href="index.html">Home</a>
+      <p>
+          <pre>
+              <code>
+                  <h2>JS</h2>
+                    /*This is the function that the button element is calling*/
+                    function insertElement() {
+                    
+                      //create the html element to be inserted in the Doc
+                      var element = document.createElement("li");
+                    
+                      /*create the TextNode that will be appended to the new html element*/
+                      var textnode = document.createTextNode("buckets");
+                    
+                      /*combine or "append" the TextNode and the new html element together*/
+                      element.appendChild(textnode);
+                    
+                      /*tie together what you just combined to the html element that references the id*/
+                      document.getElementById("unorderedList").appendChild(element);
+                    }
+                    
+                    //Function for insertBefore()
+                    function insertStart() {
+                    
+                      /*Do the usual stuff, create the element, create the textnode, put them together*/
+                      var newElem = document.createElement("li");
+                      var txtnode_2 = document.createTextNode("Number 1");
+                      newElem.appendChild(txtnode_2);
+                    
+                      /*Get the reference to the element in the document with the id*/
+                      var list = document.getElementById("unorderedList_2");
+                    
+                    
+                      /*Here is where you use the insertBefore(), it's parameters use a childNodes[]. This is ready only. This references the list of Nodes being used in the document*/
+                      list.insertBefore(newElem, list.childNodes[0]);
+                    }
+                    
+                    function Undo() {
+                      var list_2 = document.getElementById("unorderedList_2");
+                      list_2.removeChild(list_2.childNodes[0]);
+                    }
+              </code>
+          </pre>
+      </p>
+      <hr>
+    <h2>Results From Code</h2>
+    <p>Click the button to insert a new element into the list</p>
+
+    <!--Create the button-->
+    <button onclick="insertElement()">Click</button>
+
+    <!--The id here will be called in the JS code-->
+    <ul id="unorderedList">
+      <li>I</li>
+      <li>got</li>
+    </ul>
+
+    <p>Now we are going to have another list, except this time we are going to insert at the top of the list instead of at the end.</p>
+
+    <hr>
+
+    <p>Click the button to run the function</p>
+    <button onclick="insertStart()">Click</button>
+
+    <ul id="unorderedList_2">
+      <li>Number 2</li>
+      <li>Number 3</li>
+    </ul>
+
+    <hr>
+
+    <p>Click this button to undo what we just did</p>
+    <button onclick="Undo()">Click</button>
+    <script src="DomManipulation.js"></script>
+  </body>
+</html>

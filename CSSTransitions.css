@@ -1,0 +1,20 @@
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+div {
+    width: 300px;
+    height: 200px;
+    background: red;
+    transition-property: width;
+    transition-duration: .2s;
+    transition-delay: 0s;
+    transition-timing-function: ease; 
+  }
+  
+  div:hover {
+      width: 900px;
+  }

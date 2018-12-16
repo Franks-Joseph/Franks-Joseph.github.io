@@ -1,0 +1,78 @@
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}
+
+#translate {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    transform: translate(25px, 0px);
+  }
+  #translate p {
+    padding-top: 15px;
+  }
+  #rotate {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+  transform: rotate(45deg)
+  }
+  #rotate p {
+    padding-top: 15px;
+  }
+  #scale {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+   transform: scale(1.5, 1.5)
+  }
+  #scale p {
+    padding-top: 15px;
+  }
+  #skewX {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+  transform: skewX(30deg)
+  }
+  #skewX p {
+    padding-top: 15px;
+  }
+  #skewY {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+  transform: skewY(30deg) 
+  }
+  #skewY p {
+    padding-top: 15px;
+  }
+  #skew {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+  transform: skew(25deg, 15deg)
+  }
+  #skew p {
+    padding-top: 15px;
+  }
+  #matrix {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-align: center;
+    transform: matrix(5, 2, 0, 1, 0, 20);
+  }
+  #matrix p {
+    padding-top: 15px;
+  }
+  

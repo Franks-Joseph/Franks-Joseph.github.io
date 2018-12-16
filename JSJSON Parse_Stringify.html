@@ -1,0 +1,37 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS - Object Creation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JSBasics.css" />
+</head>
+<body>
+    <h1>JSJSON Parse_Stringify</h1>
+    <a href="index.html">Home</a>
+    <p>
+        <pre>
+            <code>
+                    //Give something for JSON to parse.
+                    console.log(JSON.stringify({Name: "Mark", Age: 45, Location: "Arizona"}));
+                    console.log("Highlight the text above and use it");
+                    console.log();
+                    
+                    //JSON Parse
+                    var strings = '{"Name": "Mark", "Age": 45, "Location": "Arizona"}'
+                    var obj1 = JSON.parse(strings);
+                    //name is understood as Mark because of the JSON.parse Method
+                    console.log(obj1.Name);                                            
+            </code>
+        </pre> 
+    </p>
+    <h2>Results From Code</h2>
+    <ol>
+        <li>Right Click on the blank screen</li>
+        <li>Click on "inspect"</li>
+        <li>Click on the console tab at the top</li>
+        <li>See results</li>
+    </ol>
+    <script src="JSJSON Parse_Stringify.js"></script>
+</body>
+</html>       

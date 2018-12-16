@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>CanvasAudioVideo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JSBasics.css" />
+</head>
+
+<body>
+    <h1>HTML5 - Canvas, Audio, Video</h1>
+    <a href="index.html">Home</a>
+    <p>
+        <pre>
+            <code>
+                    &lth3&gtAudio&lt/h3&gt
+                    &ltaudio controls&gt
+                      &ltsource src="file.mp3" type="audio/mpeg"&gt
+                    &lt/audio&gt
+                
+                    &lth3&gtVideo&lt/h3&gt
+                    &ltvideo width="300" controls&gt
+                      &ltsource src="file.mp4" type="video/mp4"&gt
+                    &lt/video&gt
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <p>
+        <pre>
+            <code>
+                <h2>JS</h2>
+                var canvas = document.getElementById("canvas");
+                var ctx = canvas.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(150, 100, 70, 20, 360);
+                ctx.stroke();
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Results From Code</h2>
+    <h3>Canvas</h3>
+    <p>Draw a circle on the canvas</p>
+    <canvas id="canvas" width="300px" height="200px" style="border: solid 1px black;"></canvas>
+
+    <h3>Audio</h3>
+    <audio controls autoplay>
+      <source src="coldplay-charlie-brown.mp3" type="audio/mpeg">
+    </audio>
+
+    <h3>Video</h3>
+    <video width="300" height="240" controls>
+      <source src="success.mp4" type="video/mp4">
+    </video>
+    <script src="CanvasAudioVideo.js"></script>
+</body>
+
+</html>

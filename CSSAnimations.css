@@ -1,0 +1,40 @@
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+}/*Specifies the animation as a set of styles that change from one state to another*/
+@keyframes box {
+    from {width: 50px; height: 50px; border-radius: 0%; left: 50px;}
+    to   {width: 20px; height: 20px; border-radius: 100%; left: 100px;}
+  }
+  
+  /* The element that is affected */ 
+  #div {
+    border: solid 2px black;
+    background-color: grey;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    /*linking the animation to the @keyframe*/
+    animation-name: box;
+    /*how long the animation will last*/
+    animation-duration: 1s;
+    /*how long before the animation begins*/
+    animation-delay: 0s;
+    /*Means forward or backward or both*/
+    animation-direction: alternate;
+    /*Sets the style of the element after the animation ends, before it begins, or both */
+    animation-fill-mode: backwards;
+    /*how many times the animation is played*/
+    animation-iteration-count: 10;
+    /*used to pause or play the animation with JS*/
+    animation-play-state: running;
+    /*sets the speed curve of the animation. This is not duration. Duration is the time of the animation thats played. timing-function is the time of the change in the animation. The change in the animation could change slowly at the end or beginning during the animation-duration. */
+    animation-timing-function: ease;
+    animation: box 1s ease 3s 8 forwards alternate running
+  
+    /*This is the syntax for doing all of them in one property
+    animation: name duration timing-function delay iteration-count direction fill-mode play-state;*/
+  
+  }

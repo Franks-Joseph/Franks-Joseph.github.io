@@ -1,0 +1,176 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JS - Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JSMobile.css" />
+</head>
+
+<body>
+    <h1>JS - Events on Mobile</h1>
+    <a href="index.html">Home</a>
+    <p>
+        <pre>
+            <code>
+                <h2>CSS</h2>
+                pre code {
+                    background-color: #eee;
+                    border: 1px solid #999;
+                    display: block;
+                    padding: 20px;
+                }
+                
+                .action1 {
+                    border: solid 1px white;
+                    list-style-type: none; 
+                    margin: 0;
+                    padding: 0;
+                  }
+                  #button {
+                    width: 50px;
+                    height: 50px;
+                    border: solid 1px black;
+                    background-color: rgb(30, 187, 235);
+                    border-radius: 100%;
+                    float: left;
+                  }
+                  #something {
+                    font-family: sans-serif;
+                  }
+                  #Desc1 {
+                  font-family: sans-serif;
+                  }
+                  .action2 {
+                    border: solid 1px white;
+                    list-style-type: none; 
+                    margin: 0;
+                    padding: 0;
+                  }
+                  #button2 {
+                    width: 50px;
+                    height: 50px;
+                    border: solid 1px black;
+                    background-color: rgb(30, 187, 235);
+                    border-radius: 100%;
+                    float: left;
+                  }
+                  #Desc2 {
+                    font-family: sans-serif;
+                  }
+                  #something2 {
+                    font-family: sans-serif;
+                  }
+                  .action3 {
+                    border: solid 1px white;
+                    list-style-type: none; 
+                    margin: 0;
+                    padding: 0;
+                  }
+                  #button3 {
+                    width: 50px;
+                    height: 50px;
+                    border: solid 1px black;
+                    background-color: rgb(30, 187, 235);
+                    border-radius: 100%;
+                    float: left;
+                  }
+                  #desc3 {
+                    font-family: sans-serif;
+                  }
+                  #something3 {
+                    font-family: sans-serif;
+                  }
+                  .action4 {
+                    border: solid 1px white;
+                    list-style-type: none; 
+                    margin: 0;
+                    padding: 0;
+                  }
+                  #button4 {
+                     width: 50px;
+                    height: 50px;
+                    border: solid 1px black;
+                    background-color: rgb(30, 187, 235);
+                    border-radius: 100%;
+                    float: left;
+                  }
+                  #desc4 {
+                    font-family: sans-serif;
+                  }
+                  #something4 {
+                    font-family: sans-serif;
+                  }                
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <p>
+        <pre>
+            <code>
+                <h2>JS</h2>
+                    /*ontouchstart*/
+                    function someFunction() {
+                        document.getElementById('something').innerHTML = "Hello World";
+                      }
+                      /*ontouchmove*/
+                      function anotherFunction() {
+                        document.getElementById('something2').innerHTML = "Hello Again";
+                      }
+                      /*ontouchend*/
+                      function thirdFunction() {
+                        document.getElementById('something3').innerHTML = "HELLO";
+                      }
+                      /*ontouchcancel*/
+                      function fourthFunction() {
+                        document.getElementById('something4').innerHTML = "HELLO AGAIN";
+                      }    
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Results From Code</h2>
+    <ol>
+        <li>Open this page on Google Chrome Browser</li>
+        <li>Right Click the blank screen</li>
+        <li>Click on inspect</li>
+        <li>Press Ctrl + Shift + M on the keyboard to toggle device toolbar</li>
+        <li>Interact with the Blue Circles to see Mobile Interaction</li>
+    </ol>
+    <!--First Action-->
+    <ul class="action1">
+        <li><button id="button" ontouchstart="someFunction()"></button></li>
+        <li>
+            <p id="Desc1">Touch on the circle button the show "Hello World"</p>
+        </li>
+    </ul>
+    <p id="something"></p>
+    <!--Second Action-->
+    <ul class="action2">
+        <li><button id="button2" ontouchmove="anotherFunction()"></button></li>
+        <li>
+            <p id="Desc2">Swipe the botton to make changes</p>
+        </li>
+    </ul>
+    <p id="something2"></p>
+    <!--Third Action-->
+    <ul class="action3">
+        <li><button id="button3" ontouchend="thirdFunction()"></button></li>
+        <li>
+            <p id="desc3">Let go of the button to execute the Function</p>
+        </li>
+    </ul>
+    <p id="something3"></p>
+    <!--Fourth Action-->
+    <ul class="action4">
+        <li><button id="button4" ontouchcancel="fourthFunction()"></button></li>
+        <li>
+            <p id="desc4">Touch this to interrupt the the event.</p>
+        </li>
+    </ul>
+    <p id="something4"></p>
+    <script src="JSMobile.js"></script>
+</body>
+
+</html>

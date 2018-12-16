@@ -1,0 +1,52 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>XHR_with_JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JSBasics.css" />
+</head>
+<body>
+    <h1>XHR_with_JSON</h1>
+    <a href="index.html">Home</a>
+    <h3>NOTE: Running the XHR in chrome browser will not work becuase of CORS policy</h3>
+    <p>
+        <pre>
+            <code>
+                <h2>JS</h2>
+                function runFunction() {
+                    const xhr = new XMLHttpRequest();
+            
+                    xhr.onload = function() {
+                      const jasonObject = JSON.parse(this.responseText);
+                      
+                      alert(jasonObject.Game);
+                      
+                      console.log("Success!");
+                    }
+                    
+                    xhr.open('get', 'XHR_with_JSON.json');
+                    xhr.send(); 
+                }       
+            </code>
+        </pre> 
+    </p>
+
+    <p>
+        <pre>
+            <code>
+                <h2>JSON</h2>
+                    {
+                        "Game": "My Favorite Game is Halo",
+                        "Level": "Silent Cartogropher",
+                        "Difficulty": "Legendary"
+                      }
+            </code>
+        </pre>
+    </p>
+
+    <h2>Results From Code</h2>
+    <button onclick="runFunction()">Click Here</button>
+    <script src="XHR_with_JSON.js"></script>
+</body>
+</html>

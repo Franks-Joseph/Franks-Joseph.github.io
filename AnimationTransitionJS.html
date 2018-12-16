@@ -1,0 +1,101 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Animation and Transitions with JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="AnimationTransitionJS.css" />
+</head>
+<body>
+    <h1>Triggering Animations and Transitions with JS</h1>
+    <a href="index.html">Home</a>
+    <p>
+        <pre>
+            <code>
+                <h2>CSS</h2>  
+                pre code {
+                    background-color: #eee;
+                    border: 1px solid #999;
+                    display: block;
+                    padding: 20px;
+                }
+                
+                #box_barrier {
+                    width: 500px;
+                    height: 50px;
+                    position: relative;
+                    background: grey;
+                  }
+                  #animate {
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    background-color:black;
+                  }
+                  
+                  #box {
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    background: black;
+                  }
+                  
+                  #box:hover {
+                     background-color: red;
+                      width: 50px;
+                      height: 50px;
+                      border-radius: 100%;
+                  }                    
+            </code>
+        </pre> 
+    </p>
+    <hr>
+    <p>
+        <pre>
+            <code>
+                <h2>JS</h2>
+                function Animate() {
+                    var div_id_animate = document.getElementById("animate");
+                     
+                    var position = 0;
+                    var height = 50;
+                  
+                    /*
+                    set an interval for how many times an element's position is adjusted.
+                    */
+                    var refresh = setInterval(frame, 5);
+                    function frame() {
+                  
+                     if (position &lt= 450) {
+                       position++;
+                       div_id_animate.style.left = position + 'px';
+                       
+                     }
+                      
+                    }
+                  }
+                  
+                  function Transition() {
+                    document.getElementById("box").style.transition = "all .5s";
+                  }
+            </code>
+        </pre>
+    </p>
+    <hr>
+    <h2>Results From Code</h2>
+    <p>Second button enables the style. Hover over the square to activate it.</p>
+    <button onclick="Animate()">Click</button>
+    <hr>
+
+    <div id ="box_barrier">
+    <div id ="animate"></div>
+    </div>
+    <hr>
+
+    <button onclick="Transition()">Click</button>
+    <hr>
+
+    <div id="box"></div>
+    <script src="AnimationTransitionJS.js"></script>
+</body>
+</html>

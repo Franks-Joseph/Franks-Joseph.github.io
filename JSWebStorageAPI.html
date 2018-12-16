@@ -1,0 +1,36 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS - WebStorage API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="JSBasics.css" />
+</head>
+<body>
+    <h1>JS - Web Storage API</h1>
+    <a href="index.html">Home</a>
+    <p>
+        <pre>
+            <code>
+                <h2>JS</h2>
+                sessionStorage.setItem('Ferrari', 'F430');
+                console.log(sessionStorage.getItem('Ferrari'));
+
+                localStorage.setItem('Ford', 'Focus');
+                console.log(localStorage.getItem('Ford'));
+
+                localStorage.setItem('Chevy', 'Sonic');
+                console.log(localStorage.getItem('Chevy'));
+
+                function Car() {
+                document.getElementById("Car").innerHTML = document.write(localStorage.getItem('Chevy'));
+                    }      
+            </code>
+        </pre> 
+    </p>
+
+    <h2>Results From Code</h2>
+    <button onclick="Car()">Click Here</button>
+    <script src="JSWebStorageAPI.js"></script>
+</body>
+</html>
